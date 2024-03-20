@@ -9,19 +9,19 @@ const App = () =>{
     return(
       <Container maxWidth="lg">
         <AppBar position='static' color='inherit'>
-        <Typography variant='h4' align='center'>
+        <Typography variant='h2' align='center'>
                NOSTALGIA NET
         </Typography>
-        <img src={memories} alt='Memories' height="60"/>
+        <img src={memories} alt='Memories' height="500px"/>
         </AppBar>
        <Grow in>
         <Container>
-          <Grid Container justify="space-between" alignItems="strech" spacing={3}>
+          <Grid container justifyContent='space-between' alignItems="stretch" spacing={3}>
                 <Grid item xs={12} sm={7}>
                   <Posts />
                  
                 </Grid>
-                <Grid item xs={12} sm={7}>
+                <Grid item xs={12} sm={4}>
                   <Form />
                 </Grid>
           </Grid>
