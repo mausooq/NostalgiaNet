@@ -4,8 +4,9 @@ import React from 'react';
 import memories from './images/memories.png'
 import Form from './components/Forms/Forms'
 import Posts from './components/Posts/Posts'
-
+import useStyles from './style'
 const App = () =>{
+  const classes= useStyles();
     return(
       <Container maxWidth="lg">
         <AppBar position='static' color='inherit'>
