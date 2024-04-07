@@ -5,15 +5,16 @@ import memories from './images/memories.png'
 import Form from './components/Forms/Forms'
 import Posts from './components/Posts/Posts'
 import useStyles from './style'
+
 const App = () =>{
   const classes= useStyles();
     return(
       <Container maxWidth="lg">
-        <AppBar position='static' color='inherit'>
-        <Typography variant='h2' align='center'>
+        <AppBar className={classes.appBar} position='static' color='inherit'>
+        <Typography className={classes.heading} variant='h2' align='center'>
                NOSTALGIA NET
         </Typography>
-        <img src={memories} alt='Memories' height="500px"/>
+        <img className={classes.image} src={memories} alt='Memories' height="80px"/>
         </AppBar>
        <Grow in>
         <Container>
